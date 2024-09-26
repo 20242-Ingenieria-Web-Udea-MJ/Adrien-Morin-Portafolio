@@ -16,7 +16,7 @@ export default function Header() {
     return (
         <div className="w-full p-12 bg-white">
             <h1 className="text-4xl font-bold text-primary">
-                I'm Adrien Morin,
+                {"I'm Adrien Morin,"}
             </h1>
             <h1 className="text-4xl font-bold mt-2">
                 Seeking a <span className={"text-secondary"}>Cloud, Information Security or Data</span> Internship for

@@ -13,7 +13,7 @@ interface ProfileProps {
 
 export default function Profile({ name, description }: ProfileProps) {
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center p-5 bg-white">
             <Avatar className="w-40 h-40">
                 <AvatarImage src={imageLink} alt="@shadcn"/>
                 <AvatarFallback>CN</AvatarFallback>

@@ -1,12 +1,25 @@
-interface AboutProps {
-    name: string;
-    description: string;
+interface Information {
+    label: string;
+    content: string;
 }
 
-export default function About({ name, description }: AboutProps) {
+interface InformationTableProps {
+    information: Information[];
+}
+
+export default function InformationTable({ information }: InformationTableProps) {
     return (
-        <div className="flex flex-col items-center">
-            about
+        <div className="grid gap-3 w-full">
+            <ul className="grid gap-3">
+                {information.map((info, index) => (
+                    <li key={index} className="flex items-center justify-between">
+                        <span className="text-muted-foreground">
+                            {info.label}
+                        </span>
+                        <span>{info.content}</span>
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 }

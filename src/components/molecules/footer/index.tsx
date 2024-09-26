@@ -1,5 +1,3 @@
-import {Card} from "@/components/ui/card";
-
 export function Footer() {
     return (
         <div className={"w-full h-16 flex items-center bg-white"}>

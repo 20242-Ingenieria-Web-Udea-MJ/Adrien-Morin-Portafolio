@@ -30,7 +30,7 @@ export function EducationList({ list }: EducationListProps) {
             {list.map((info, index) => (
                 <div key={index}>
                     <div className={"flex lg:flex-row flex-col w-full justify-between"}>
-                        <div className={"lg:w-1/6 w-full"}>
+                        <div className={"lg:w-[25%] w-full"}>
                             <h2 className="scroll-m-20 pb-2 text-2xl font-semibold tracking-tight transition-colors first:mt-4">
                                 {info.leftTitle}
                             </h2>
@@ -41,7 +41,7 @@ export function EducationList({ list }: EducationListProps) {
                                 <Badge className={"bg-secondary"}>{info.date}</Badge>
                             </div>
                         </div>
-                        <div className={"lg:w-4/6 w-full"}>
+                        <div className={"lg:w-7/12 w-full"}>
                             <h2 className="scroll-m-20 pb-2 text-2xl font-semibold tracking-tight transition-colors first:mt-4">
                                 {info.rightTitle}
                             </h2>

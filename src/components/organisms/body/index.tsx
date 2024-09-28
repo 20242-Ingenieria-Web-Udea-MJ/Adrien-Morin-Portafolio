@@ -108,6 +108,51 @@ export default function Body() {
                     },
                 ]}
             />
+            <Paragraph
+                label={"Experiences"}
+                content={""}
+            />
+            <EducationList
+                list={[
+                    {
+                        leftTitle: "Full Stack Developer",
+                        leftLabel: "Internship",
+                        date: "2024 (3 months)",
+                        rightTitle: "Onepoint, Lyon, France",
+                        description: "AWS Solution Architect Associate certification. " +
+                            "Projects : Agile SCRUM Full Stack and PowerBI. " +
+                            "Java, Angular, PostgreSQL, Azure BlobStorage, Docker, Terraform."
+                    },
+                    {
+                        leftTitle: "Full Stack Developer",
+                        leftLabel: "Internship",
+                        date: "2023 (3 months)",
+                        rightTitle: "Dassault Systèmes R&D Japan Lab (DSKK), Nagoya, Japan",
+                        description: "Full stack, Java, Vue.js, GitLab pipelines and integration tests in JavaScript, data encryption"
+                    },
+                    {
+                        leftTitle: "Account Executive & Marketing member",
+                        leftLabel: "Student",
+                        date: "2022 - 2024",
+                        rightTitle: "ETIC INSA Technologies, Lyon, France",
+                        description: "Needs analysis, drafting of specifications and project follow-up. Website development, integration between Hubspot CRM and other services."
+                    },
+                    {
+                        leftTitle: "Computer Engineering",
+                        leftLabel: "Interim",
+                        date: "2022 (2 months)",
+                        rightTitle: "SEEB Industrie, Chauffailles, France",
+                        description: "Automatic coding of elements and tools in C# for the deployment of a new shop management software."
+                    },
+                    {
+                        leftTitle: "IT Intern",
+                        leftLabel: "Internship",
+                        date: "2021",
+                        rightTitle: "Cruas-Meysse Nuclear Power Plant (EDF), Cruas, France",
+                        description: "Telecom audit constituting the basis for a project to implement 4G within the company."
+                    },
+                ]}
+            />
             <Footer />
         </div>
     );

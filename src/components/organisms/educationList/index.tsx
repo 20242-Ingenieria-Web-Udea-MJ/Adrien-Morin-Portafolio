@@ -29,7 +29,7 @@ export function EducationList({ list }: EducationListProps) {
         <Card className={"bg-white w-full p-12"}>
             {list.map((info, index) => (
                 <div key={index}>
-                    <div className={"flex lg:flex-auto flex-col w-full justify-between"}>
+                    <div className={"flex lg:flex-row flex-col w-full justify-between"}>
                         <div className={"lg:w-1/6 w-full"}>
                             <h2 className="scroll-m-20 pb-2 text-2xl font-semibold tracking-tight transition-colors first:mt-4">
                                 {info.leftTitle}

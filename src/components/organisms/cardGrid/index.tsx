@@ -1,3 +1,12 @@
+// ----------------------------------------------------------------------------------
+// Card grid organism that can be used to show the personal knowledge.
+// Takes as input a list of :
+// - logo (the name of the iconify logo)
+// - title
+// - subtitle
+// The layout adapts itself automatically to the number of cards.
+// ----------------------------------------------------------------------------------
+
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import {Icon} from "@iconify/react"; // Assurez-vous d'importer les composants correctement
 

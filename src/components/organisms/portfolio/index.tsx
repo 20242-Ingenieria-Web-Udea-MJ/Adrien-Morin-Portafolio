@@ -1,3 +1,8 @@
+// ----------------------------------------------------------------------------------
+// The portfolio organism that shows a list of cards in a carousel.
+// Takes as input a list of portfolioCard information.
+// ----------------------------------------------------------------------------------
+
 import {
     Carousel,
     CarouselContent,

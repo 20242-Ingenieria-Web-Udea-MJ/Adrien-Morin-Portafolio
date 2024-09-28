@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+// Body organism for the center part of the page.
+// ----------------------------------------------------------------------------------
+
 import Paragraph from "@/components/molecules/paragraph";
 import CardGrid from "@/components/organisms/cardGrid";
 import {Certification} from "@/components/atoms/certification";

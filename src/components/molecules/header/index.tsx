@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+// A Header component that is showing the curriculum title and a button to schedule a meeting.
+// ----------------------------------------------------------------------------------
+
 import { Button } from "@/components/ui/button"
 import {Icon} from "@iconify/react";
 import {
@@ -15,10 +19,10 @@ const buttonLink: string = "https://calendar.google.com/calendar/u/0/appointment
 export default function Header() {
     return (
         <div className="w-full p-12 bg-white">
-            <h1 className="text-4xl font-bold text-primary">
+            <h1 className="text-2xl lg:text-4xl font-bold text-primary">
                 {"I'm Adrien Morin,"}
             </h1>
-            <h1 className="text-4xl font-bold mt-2">
+            <h1 className="text-2xl lg:text-4xl font-bold lg:mt-2">
                 Seeking a <span className={"text-secondary"}>Cloud, Information Security or Data</span> Internship for
                 February 2025
             </h1>
@@ -26,7 +30,7 @@ export default function Header() {
                 className={"text-secondary"}>6-month project</span>.</p>
             <Dialog>
                 <DialogTrigger asChild>
-                    <Button variant="secondary" className={"mt-6 h-12"}>
+                    <Button variant="secondary" className={"text-lg mt-6 h-12"}>
                         <Icon icon={"akar-icons:schedule"} className={"mr-2"}/>
                         Schedule a meeting
                     </Button>

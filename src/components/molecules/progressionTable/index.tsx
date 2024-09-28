@@ -1,3 +1,12 @@
+// ----------------------------------------------------------------------------------
+// A table component with progression bars for each line.
+// Can be used to show some skills with there level.
+// The props are made of a list of information for each line :
+// - A label
+// - The level of progression out of 100
+// - (optional) A progression label : if mentioned, it will put this label, if not, it will put the progression score percentage
+// ----------------------------------------------------------------------------------
+
 "use client"
 
 import * as React from "react"
@@ -18,6 +27,7 @@ interface InformationTableProps {
 export default function ProgressionTable({ information, title }: InformationTableProps) {
     const [progress, setProgress] = React.useState<number[]>(information.map(() => 0))
 
+    // This useEffect is made for the progressionTable animation
     React.useEffect(() => {
         const timers = information.map((_, index) =>
             setTimeout(() => {

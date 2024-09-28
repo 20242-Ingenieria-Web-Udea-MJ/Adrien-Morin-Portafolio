@@ -1,3 +1,10 @@
+// ----------------------------------------------------------------------------------
+// A table component that can be used to show personal information.
+// Takes as input a list of :
+// - label
+// - content
+// ----------------------------------------------------------------------------------
+
 interface Information {
     label: string;
     content: string;

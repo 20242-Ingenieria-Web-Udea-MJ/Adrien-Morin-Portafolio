@@ -1,21 +1,45 @@
 import About from "@/components/organisms/about";
-import Links from "@/components/organisms/links";
+import Links, {LinksMobile} from "@/components/organisms/links";
 import Header from "@/components/molecules/header";
 import Body from "@/components/organisms/body";
+import {
+    Sheet,
+    SheetContent,
+    SheetHeader,
+    SheetTrigger,
+} from "@/components/ui/sheet"
+import {Icon} from "@iconify/react";
+
 
 export default function Home() {
   return (
-      <main className="flex w-screen">
-        <div className="fixed w-[20%] top-0 left-0">
-          <About />
-        </div>
-        <div className="w-[75%] bg-gray-100 pr-10 pl-10 ml-[20%]">
-            <Header/>
-            <Body />
-        </div>
-        <div className="fixed w-[5%] h-screen top-0 right-0">
-            <Links />
-        </div>
+      <main>
+          <div className={"sticky z-40 top-0 right-0 xl:hidden flex bg-white w-full h-16 justify-between items-center pr-6 pl-6"}>
+              <Sheet key="left">
+                  <SheetTrigger asChild>
+                      <Icon icon={"mingcute:menu-fill"} className={"text-4xl text-secondary"} />
+                  </SheetTrigger>
+                  <SheetContent className={'bg-white'} side="left">
+                      <SheetHeader>
+                          <About/>
+                      </SheetHeader>
+                  </SheetContent>
+              </Sheet>
+              <LinksMobile />
+          </div>
+          <div className={"flex w-screen"}>
+              <div className="fixed w-[20%] top-0 left-0 hidden xl:block">
+                  <About/>
+              </div>
+              <div className="xl:w-[75%] w-full bg-gray-100 pr-10 pl-10 xl:ml-[20%]">
+                  <Header/>
+                  <Body/>
+              </div>
+              <div className="fixed hidden xl:block xl:w-[5%] h-screen top-0 right-0">
+                  <Links/>
+              </div>
+          </div>
       </main>
-  );
+)
+    ;
 }

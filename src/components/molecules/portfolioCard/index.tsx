@@ -1,3 +1,8 @@
+// ----------------------------------------------------------------------------------
+// A card component that is made of a photo, title description and link (if mentioned).
+// If no link is mentioned, a separator will replace the link component.
+// ----------------------------------------------------------------------------------
+
 import {Card} from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";

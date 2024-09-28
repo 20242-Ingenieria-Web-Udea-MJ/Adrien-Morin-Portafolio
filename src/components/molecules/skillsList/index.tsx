@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+// A list component made of a title and a list of strings (shown with a logo in each line).
+// ----------------------------------------------------------------------------------
+
 import { Icon } from '@iconify/react';
 
 interface InformationTableProps {

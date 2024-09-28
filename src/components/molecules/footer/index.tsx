@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+// A simple footer element for copy writing.
+// ----------------------------------------------------------------------------------
+
 export function Footer() {
     return (
         <div className={"w-full h-16 flex items-center bg-white"}>

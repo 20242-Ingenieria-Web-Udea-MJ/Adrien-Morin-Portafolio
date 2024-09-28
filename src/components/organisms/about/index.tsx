@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+// About section organism for the left part of the page.
+// ----------------------------------------------------------------------------------
+
 import InformationTable from "@/components/molecules/informationTable";
 import Profile from "@/components/molecules/profile";
 import {Separator} from "@/components/ui/separator";

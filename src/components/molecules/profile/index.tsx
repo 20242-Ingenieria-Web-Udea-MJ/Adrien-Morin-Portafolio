@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+// A Profile component composed of a photo (avatar), a title for the name, and a small description.
+// ----------------------------------------------------------------------------------
+
 import {
     Avatar,
     AvatarFallback,

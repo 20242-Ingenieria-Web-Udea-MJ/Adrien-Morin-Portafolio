@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+// A paragraph component composed of a title and a description. Can be used to introduce parts of the curriculum
+// ----------------------------------------------------------------------------------
+
 interface ParagraphProps {
     label: string;
     content: string;

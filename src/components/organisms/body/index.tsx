@@ -67,7 +67,7 @@ export default function Body() {
                     image: "/img/veltiosia.png",
                     title: "Veltiosia's website",
                     description: "A webflow website development that helps the client to get started and then be able to manage the website on their own.",
-                    link: "nuancin.fr",
+                    link: "https://www.veltiosia.fr",
                     linkText: "Visit the website"
                 },
                 {

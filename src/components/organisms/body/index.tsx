@@ -60,8 +60,8 @@ export default function Body() {
                     image: "/img/cloud.png",
                     title: "Cloud Web Application",
                     description: "A web application for an association, that allows users to upload files to the cloud for historical archiving and be able to retrieve them easily.",
-                    link: "",
-                    linkText: ""
+                    link: "https://github.com/AdrienMorin/Arca",
+                    linkText: "View on GitHub"
                 },
                 {
                     image: "/img/veltiosia.png",

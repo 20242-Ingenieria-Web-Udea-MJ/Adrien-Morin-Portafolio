@@ -17,7 +17,7 @@ export default function About() {
                     description="Computer Engineer"
                 />
             </div>
-            <div className={"w-full"}>
+            <div className={"w-full mb-4"}>
                 <Separator className="my-2" />
                 <InformationTable
                     information={[

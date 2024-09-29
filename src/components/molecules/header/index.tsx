@@ -12,13 +12,17 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
+import Profile from "@/components/molecules/profile";
 
 
 const buttonLink: string = "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1GVQuM7XCeJb4nQBAPjYWkHBredj4VzcR6lFAogGqlK4Xf2e60J5FfccbNZex1uusvO74B4teV";
 
 export default function Header() {
     return (
-        <div className="w-full p-12 bg-white">
+        <div className="w-full p-12 pt-0 lg:pt-12 bg-white">
+            <div className={"xl:hidden"}>
+                <Profile name={""} description={""} />
+            </div>
             <h1 className="text-2xl lg:text-4xl font-bold text-primary">
                 {"I'm Adrien Morin,"}
             </h1>

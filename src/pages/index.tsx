@@ -2,31 +2,13 @@ import About from "@/components/organisms/about";
 import Links, {LinksMobile} from "@/components/organisms/links";
 import Header from "@/components/molecules/header";
 import Body from "@/components/organisms/body";
-import {
-    Sheet,
-    SheetContent,
-    SheetHeader,
-    SheetTrigger,
-} from "@/components/ui/sheet"
-import {Icon} from "@iconify/react";
+import MobileNavBar from "@/components/molecules/mobileNavBar";
 
 
 export default function Home() {
   return (
       <main>
-          <div className={"sticky z-40 top-0 right-0 xl:hidden flex bg-white w-full h-16 justify-between items-center pr-6 pl-6"}>
-              <Sheet key="left">
-                  <SheetTrigger asChild>
-                      <Icon icon={"mingcute:menu-fill"} className={"text-4xl text-secondary"} />
-                  </SheetTrigger>
-                  <SheetContent className={'bg-white'} side="left">
-                      <SheetHeader>
-                          <About/>
-                      </SheetHeader>
-                  </SheetContent>
-              </Sheet>
-              <LinksMobile />
-          </div>
+          <MobileNavBar/>
           <div className={"flex w-screen"}>
               <div className="fixed w-[20%] top-0 left-0 hidden xl:block">
                   <About/>

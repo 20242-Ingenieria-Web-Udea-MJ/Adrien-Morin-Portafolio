@@ -1,5 +1,5 @@
 import About from "@/components/organisms/about";
-import Links, {LinksMobile} from "@/components/organisms/links";
+import Links from "@/components/organisms/links";
 import Header from "@/components/molecules/header";
 import Body from "@/components/organisms/body";
 import MobileNavBar from "@/components/molecules/mobileNavBar";
